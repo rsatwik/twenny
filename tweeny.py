@@ -3,7 +3,7 @@ import os
 import time
 starttime = time.time()
 def start():
-    os.system("notify-send --hint int:transient:1 'Tweeny' \"It's time, look away for 20 seconds!\" && sleep 20 && notify-send --hint int:transient:1 'Tweeny' 'You can continue working now'")
+    os.system("notify-send --hint int:transient:1 'Tweeny' \"It's time, look away for 20 seconds!\" && sleep 20 && notify-send --hint int:transient:1 'Tweeny' 'You can continue working now' > /dev/null")
 
 while True:
     start()
